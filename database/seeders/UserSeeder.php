@@ -19,10 +19,10 @@ class UserSeeder extends Seeder
     {
 
         User::factory()->create([
-            'first_name' => 'Abdulwahab',
-            'last_name' => 'Daudi',
-            'email' => 'abdulwahabdaudi@gmail.com',
-            'phone' => '0755373215',
+            'first_name' => 'admin',
+            'last_name' => 'Mkuu',
+            'email' => 'admin@gmail.com',
+            'phone' => '0712345678',
             'role' => '1',
             'email_verified_at' => now(),
             'password' => Hash::make('12345678')

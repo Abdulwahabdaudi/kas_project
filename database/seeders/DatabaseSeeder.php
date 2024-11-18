@@ -15,10 +15,10 @@ class DatabaseSeeder extends Seeder
     {
         DB::statement('SET FOREIGN_KEY_CHECKS=0');
         DB::table('users')->truncate();
-        DB::table('products')->truncate();
+      //  DB::table('products')->truncate();
         DB::statement('SET FOREIGN_KEY_CHECKS=1');
         $this->call([
-            ProductSeeder::class,
+           // ProductSeeder::class,
             UserSeeder::class
         ]);
     }
