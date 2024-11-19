@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import UserLayout from '@/Layouts/UserLayout.vue';
 
-const title = ref('About Kilikayo Agro Suppliers')
+const title = ref('About KILIKAYA Agro Suppliers')
 const subtitle = ref('Your Trusted Partner in Agricultural Excellence')
 const mission = ref('Emphasis on bridging the gap between small farmers and end users as most of smallholders in Tanzania are faced with limited market opportunities. ')
 const vision = ref('To become a leading agricultural products export company in east Africa and Africa at large by ensuring provision of quality products to our clients. Quality is our first concern. ')

@@ -175,7 +175,7 @@ const page = usePage();
             </div>
             <div class="text-center pb-2">
                 <a href="https://wa.me/+255655373215">
-                    <v-icon icon="mdi-whatsapp" /> Design and Developed by Abdul
+                    <v-icon icon="mdi-whatsapp" /> Developers Contacts
                 </a>
             </div>
         </footer>

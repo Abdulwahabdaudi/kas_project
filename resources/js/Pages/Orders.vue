@@ -172,14 +172,10 @@ const nextPage = () => {
         <div class="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
             <div class="mt-12 md:max-w-[90%] mx-auto ">
 
-
-                <div v-if="$page.props.flash" class="alert">
-                    {{ $page.props.flash.success }}
-                </div>
                 <!-- Header -->
                 <div class="mb-8">
                     <h1 class="text-2xl font-bold text-gray-900">My Orders</h1>
-                    <p class="mt-2 text-sm text-gray-600">Track and manage your agricultural orders</p>
+                    <p class="mt-2 text-sm text-gray-600">Track and manage your orders</p>
                 </div>
 
                 <!-- Filters -->
@@ -206,7 +202,7 @@ const nextPage = () => {
                 </div>
 
                 <!-- Orders Table -->
-                <div class="bg-white rounded-lg shadow overflow-hidden">
+                <div class="bg-white rounded-lg shadow overflow-scroll">
                     <table class="min-w-full divide-y divide-gray-200">
                         <thead class="bg-gray-50">
                             <tr>

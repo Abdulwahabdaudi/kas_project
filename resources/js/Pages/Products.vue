@@ -177,15 +177,15 @@ const filteredProducts = computed(() => {
                                                 <h3 class="text-lg font-semibold text-gray-900">{{ product.name }}</h3>
                                                 <p class="text-sm text-gray-600">{{ product.category }}</p>
                                             </div>
-                                            <span class="text-lg font-bold text-green-600">${{ product.price }}</span>
+                                            <span class="text-lg font-bold text-green-600">{{ product.price }}Tsh</span>
                                         </div>
                                         <p class="mt-2 text-gray-700">{{ product.description }}</p>
                                         <div class="mt-4 md:flex  items-center justify-between">
                                             <span :class="[
                                                 ' px-2 py-1 text-sm rounded-full',
-                                                product.quantity >= 0 ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
+                                                product.quantity >= 1 ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
                                             ]">
-                                                {{ product.quantity >= 0 ? 'In Stock' : 'Out of Stock' }}
+                                                {{ product.quantity >= 1 ? 'In Stock' : 'Out of Stock' }}
                                             </span>
                                             <button @click="addToCart(product)" :disabled="product.quantity <= 0"
                                                 class="mt-2 md:mt-0 px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed">
